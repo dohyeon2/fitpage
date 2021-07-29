@@ -26,7 +26,8 @@ class fitpage {
         for (let i = 0, len = slides.length; i < len; i++) {
             slides[i].style.position = "relative";
             slides[i].style.height = "100%";
-            slides[i].innerHTML = `<div class="fitpage-pallex-container">${slides[i].innerHTML}</div>`;
+            slides[i].innerHTML = `<div class="fitpage-pallex-container">${slides[i].outerHTML}</div>`;
+            slides[i].classList.replace(slideSeletor, slideSeletor + "-wrapper");
             if (i === this.state.currentSlide) {
                 continue;
             }
@@ -45,7 +46,7 @@ class fitpage {
     easeOutBounce(x) {
         const n1 = 7.5625;
         const d1 = 2.75;
-        
+
         if (x < 1 / d1) {
             return n1 * x * x;
         } else if (x < 2 / d1) {
@@ -55,7 +56,7 @@ class fitpage {
         } else {
             return n1 * (x -= 2.625 / d1) * x + 0.984375;
         }
-        }
+    }
     easeInOutBounce(x) {
         const easeOutBounce = this.easeOutBounce;
         return x < 0.5
