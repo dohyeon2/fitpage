@@ -12,6 +12,7 @@ fitPgage.js
 ## html
 
     <div id="fitpage-container">
+        <!-- fitpage-slide안의 내용 및 스타일을 원하는대로 바꾸어도 됨 -->
         <div class="fitpage-slide"
             style="font-size:150%; text-align: center; background-color: red; display: flex; flex-direction: column; justify-content: center; align-items: center;">
             <h1>Lorem</h1>
@@ -44,7 +45,10 @@ fitPgage.js
 
 ## javascript
 
-    const fp = new fitpage({
+    const fp = new fitPage({
+        //컨테이너의 클래스 또는 아이디 셀렉터 (필수값)
         containerSelector: "#fitpage-container"
-        #클래스 또는 아이디
+        //슬라이드의 클래스 기본값은 .fitpage-slide지만 
+        //fitPage 인스턴스를 만들때 넘겨주는 오브젝트 안에 slideSelector를 별도로 정의하면 변경할 수 있음.
+        slideSeletor: ".fitpage-slide",   
     });
