@@ -1,12 +1,11 @@
 fitPgage.js
 ===========
 # Usage
-<hr>
-start
+## start
 <heal>에 아래 코드를 삽입
     <script src="../dist/fitpage.js"></script>
     <link rel="stylesheet" href="../dist/fitpage.css">
-html
+## html
     <div id="fitpage-container">
         <div class="fitpage-slide"
             style="font-size:150%; text-align: center; background-color: red; display: flex; flex-direction: column; justify-content: center; align-items: center;">
