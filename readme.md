@@ -4,7 +4,7 @@ fitPgage.js
 
 ## start
 
-<heal>에 아래 코드를 삽입
+\<head\>에 아래 코드를 삽입
 
     <script src="{fitPage 경로}/dist/fitpage.js"></script>
     <link rel="stylesheet" href="{fitPage 경로}/dist/fitpage.css">
