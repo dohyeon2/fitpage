@@ -47,6 +47,7 @@ fitPgage.js
 
     const fp = new fitPage({
         //컨테이너의 클래스 또는 아이디 셀렉터 (필수값)
+        //반드시 지정해서 넘겨주어야함
         containerSelector: "#fitpage-container"
         //슬라이드의 클래스 기본값은 .fitpage-slide지만 
         //fitPage 인스턴스를 만들때 넘겨주는 오브젝트 안에 slideSelector를 별도로 정의하면 변경할 수 있음.
